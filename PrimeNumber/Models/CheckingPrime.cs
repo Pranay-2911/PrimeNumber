@@ -10,10 +10,13 @@ namespace PrimeNumber.Models
     {
         public static bool ToCheckPrime(int number)
         {
+            //Check Exception 
             if (number <= 1) return false;
 
+            //Check prime number From 2 to Number
             for (int i = 2; i < number; i++)
             {
+                //if i divde number completely then return false
                 if (number % i == 0)
                 {
                     return false;

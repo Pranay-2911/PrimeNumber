@@ -13,7 +13,9 @@ namespace PrimeNumber
         {
             Console.WriteLine("Enter the number");
             int number = int.Parse(Console.ReadLine());
-            Console.WriteLine(CheckingPrime.ToCheckPrime(number) ? $"{number} is Prime" : $"{number} is not a Prime");
+            Console.WriteLine(CheckingPrime.ToCheckPrime(number) 
+                ? $"{number} is Prime" : 
+                $"{number} is not a Prime");
 
         }
     }
